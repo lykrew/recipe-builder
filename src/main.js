@@ -88,7 +88,7 @@ rl.on('line', (line) => {
       // list — печатает пронумерованный список или EMPTY
       case 'list': {
         const out = listCmd(recipe);
-        if (!out || out.length === 0) console.log('EMPTY'); else console.log(out.join('\n'));
+        if (!out || out.length === 0) console.log('EMPTY'); else console.log(out);
         break;
       }
 
